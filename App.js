@@ -47,12 +47,11 @@ const [isPositive, setIsPositive] = useState(false)
           element={<UserList setMessage={setMessage} setIsPositive={setIsPositive} 
           setShowMessage={setShowMessage} />}>
           </Route>
-          
-          <Route path="/posts"
-          element={<Posts info="Nämä ovat yhtiön sosiaalisen median parhaita pomintoja."
-          tervehdys="Hello!"/>}>
-          </Route>
 
+          <Route path="/posts"
+          element={<Posts />}>
+          </Route>
+          
           <Route path="/laskuri" 
           element={<Laskuri />}>
         </Route>
